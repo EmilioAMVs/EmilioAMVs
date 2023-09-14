@@ -7,7 +7,7 @@ a{color: black;
 
 header{background-color: #E4E4E4;
     display: flex;
-    min-height: 55px;
+    min-height: 25px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;}
@@ -16,7 +16,7 @@ header{background-color: #E4E4E4;
     align-items: center;
     margin-left: 25px;}
     
-.logo img{height: 45px;
+.logo img{height: 40px;
     margin-right: 25px;}
     
 nav a{font-weight: 600;
@@ -25,6 +25,10 @@ nav a{font-weight: 600;
 nav a:hover{color: goldenrod;}
     /* hover es para respresentar cuando el puntero esta sobre el texto */
 header h2:hover{color: goldenrod;}
+
+.nav-link {
+    font-size: 13px;
+}
 
 .opciones {
     display: flex;
@@ -36,6 +40,9 @@ header h2:hover{color: goldenrod;}
     justify-content: left;
 }
 
+.tipos {
+    border: 0;
+}
 
 .search-box {
     display: flex;
@@ -48,6 +55,20 @@ header h2:hover{color: goldenrod;}
     margin-left: 5px;
 }
 
+input {
+    padding: 9px;
+    padding-right: 350px;
+    border-radius: 16px 0 0 16px;
+    border: 0;
+    outline: none;
+}
+
+.botonbuscar {
+    border: 0;
+    padding: 9px;
+    border-radius: 0 16px 16px 0;
+}
+
 .eslogan {
     background-color: #453434;
     display: flex;
@@ -58,11 +79,12 @@ header h2:hover{color: goldenrod;}
 .eslogantexto {
     margin: auto;
     color: #E4E4E4;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Didot', serif;
 }
     
 .titulosubmodelados {
+    font-family: "Helvetica Neue", Arial, sans-serif;
     margin-left: 50px;
     color: #35363A;
     font-size: 20px;
@@ -77,12 +99,12 @@ header h2:hover{color: goldenrod;}
     flex-wrap: wrap; /* Permite que los rectángulos se envuelvan en filas */
     justify-content: space-between; /* Espacio horizontal entre rectángulos */
     align-items: flex-start; /* Alinea los rectángulos en la parte superior */
-    min-height: 100vh;
+    min-height: 33vh;
 }
 
 .rectangle {
     width: 200px;
-    height: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     margin: 25px; /* Espacio entre rectángulos */
@@ -90,7 +112,6 @@ header h2:hover{color: goldenrod;}
 }
 
 #rect1 { background-image: url('images/majin_buu.jpg');
-margin-top: 0%;}
-#rect2 { background-image: url(''); }
-#rect3 { background-image: url(''); }
-#rect4 { background-image: url(''); }
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
