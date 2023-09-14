@@ -1,22 +1,23 @@
 body{font-family: sans-serif;
     margin: 0;
-    background-color: rgb(105, 101, 101);}
+    background-color: #E4E4E4}
     
 a{color: black;
     text-decoration: none;}
 
 header{background-color: #E4E4E4;
     display: flex;
-    min-height: 70px;
+    min-height: 55px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;}
     
 .logo{display: flex;
-    align-items: center;}
+    align-items: center;
+    margin-left: 25px;}
     
-.logo img{height: 50px;
-    margin-right: 10px;}
+.logo img{height: 45px;
+    margin-right: 25px;}
     
 nav a{font-weight: 600;
     padding-right: 50px;}
@@ -27,7 +28,7 @@ header h2:hover{color: goldenrod;}
 
 .opciones {
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 .opciones select {
@@ -46,8 +47,30 @@ header h2:hover{color: goldenrod;}
     
     margin-left: 5px;
 }
+
+.eslogan {
+    background-color: #453434;
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+}
+
+.eslogantexto {
+    margin: auto;
+    color: #E4E4E4;
+    font-size: 40px;
+    font-family: 'Didot', serif;
+}
     
-.row {
+.titulosubmodelados {
+    margin-left: 50px;
+    color: #35363A;
+    font-size: 20px;
+}
+
+.contenido3d {
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     justify-content: space-between; /* Espacio horizontal entre rectángulos */
     flex-direction: row; /* Cambia la dirección de flex a fila */
@@ -55,7 +78,6 @@ header h2:hover{color: goldenrod;}
     justify-content: space-between; /* Espacio horizontal entre rectángulos */
     align-items: flex-start; /* Alinea los rectángulos en la parte superior */
     min-height: 100vh;
-
 }
 
 .rectangle {
@@ -64,9 +86,11 @@ header h2:hover{color: goldenrod;}
     background-size: cover;
     background-position: center;
     margin: 25px; /* Espacio entre rectángulos */
+    border-radius: 5%;
 }
 
-#rect1 { background-image: url('images/majin_buu.jpg'); }
+#rect1 { background-image: url('images/majin_buu.jpg');
+margin-top: 0%;}
 #rect2 { background-image: url(''); }
 #rect3 { background-image: url(''); }
 #rect4 { background-image: url(''); }
