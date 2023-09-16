@@ -1,38 +1,60 @@
 body{font-family: sans-serif;
     margin: 0;
-    background-color: #E4E4E4}
+    background-color: #ffffff}
     
 a{color: black;
     text-decoration: none;}
 
-header{background-color: #E4E4E4;
+header{background-color: #000000;
     display: flex;
     min-height: 25px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;}
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+
+}
     
 .logo{display: flex;
     align-items: center;
     margin-left: 25px;}
     
 .logo img{height: 40px;
-    margin-right: 25px;}
+    margin-right: -30px;
+    margin-left: 5px;
+}
     
 nav a{font-weight: 600;
     padding-right: 50px;}
 
-nav a:hover{color: goldenrod;}
+nav a:hover{color: #01adb3;}
     /* hover es para respresentar cuando el puntero esta sobre el texto */
-header h2:hover{color: goldenrod;}
+header h2:hover{color: rgb(77, 55, 0);}
 
 .nav-link {
-    font-size: 13px;
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.titulosheader1 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.titulosheader1:hover {
+    color: #01adb3; /* Color de texto al pasar el cursor */
 }
 
 .opciones {
     display: flex;
     align-items: center;
+    appearance: none;
 }
 
 .opciones select {
@@ -70,14 +92,15 @@ input {
 }
 
 .eslogan {
-    background-color: #453434;
+    background-color: #01adb3;
     display: flex;
-    min-height: 250px;
+    min-height: 300px;
     align-items: center;
 }
 
 .eslogantexto {
     margin: auto;
+    margin-bottom: 7.5%;
     color: #E4E4E4;
     font-size: 35px;
     font-family: 'Didot', serif;
@@ -87,7 +110,7 @@ input {
     font-family: "Helvetica Neue", Arial, sans-serif;
     margin-left: 50px;
     color: #35363A;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contenido3d {
