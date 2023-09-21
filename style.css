@@ -20,9 +20,9 @@ header{background-color: #000000;
     align-items: center;
     margin-left: 25px;}
     
-.logo img{height: 40px;
+.logo img{height: 35px;
     margin-right: -30px;
-    margin-left: 5px;
+    margin-left: -5px;
 }
     
 nav a{font-weight: 600;
@@ -77,6 +77,10 @@ header h2:hover{color: rgb(77, 55, 0);}
     margin-left: 5px;
 }
 
+button:hover{
+   color: #01adb3;
+}
+
 input {
     padding: 9px;
     padding-right: 350px;
@@ -100,7 +104,7 @@ input {
 
 .eslogantexto {
     margin: auto;
-    margin-bottom: 7.5%;
+    margin-bottom: 7.4%;
     color: #E4E4E4;
     font-size: 35px;
     font-family: 'Didot', serif;
@@ -130,11 +134,115 @@ input {
     height: 200px;
     background-size: cover;
     background-position: center;
-    margin: 25px; /* Espacio entre rectángulos */
+    margin: 10px; /* Espacio entre rectángulos */
     border-radius: 5%;
+    
 }
 
 #rect1 { background-image: url('images/majin_buu.jpg');
-    margin-top: 0%;
+    margin-top: 15px;
     margin-bottom: 0%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.loginpestana {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(150deg, #000000, #01adb3);
+    height: 100vh;
+    
+}
+
+
+.iniciosesion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: #E4E4E4;
+    border-radius: 15px;
+}
+
+.iniciosesion h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.iniciosesion form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username {
+    position: relative;
+    border-bottom: 2px solid #01adb3;
+    margin: 30px 0;
+}
+
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #01adb3;
+    transform: translateY(-10px);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #01adb3;
+    transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: #01adb3;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.botoninicio{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #646464;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #E4E4E4;
+    cursor: pointer;
+    outline: none;
+}
+
+.botoninicio:hover{
+    border-color: white;
+    color: white;
+    transition: .5s;
+    background-color: #35363A;
+
 }

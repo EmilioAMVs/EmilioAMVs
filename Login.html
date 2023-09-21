@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Logo solo png.png" type="image/x-icon">
+</head>
+<body class="loginpestana">
+    <div class="iniciosesion">
+        <h1>Iniciar Sesión</h1>
+        <form id="loginForm">
+            <div class="username">
+                <input type="text" required>
+                <label for="username">Usuario</label>
+            </div> 
+
+            <div class="username">
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div> 
+            <button type="submit" class="botoninicio">Iniciar Sesión</button>
+        </form>
+    
+        <p id="mensaje"></p>
+    </div>
+    
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                
+                // Obtener valores de usuario y contraseña ingresados
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                
+                // Verificar si los valores coinciden con los predefinidos
+                if (username === 'usuario' && password === 'contrasena') {
+                    document.getElementById('mensaje').textContent = 'Inicio de sesión exitoso';
+                    // Redirigir a otra página o realizar otras acciones después del inicio de sesión
+                    window.location.href="Perfil.html";
+                } else {
+                    document.getElementById('mensaje').textContent = 'Usuario o contraseña incorrectos';
+                    
+                }
+            });
+        </script>
+</body>
+</html>
